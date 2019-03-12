@@ -27,13 +27,13 @@ MRCNN:
   CONV_INIT: MSRAFill  # default: GaussianFill
 TRAIN:
   WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/MSRA/R-50.pkl
-  DATASETS: ('cflai_train')
+  DATASETS: ('cflai_train',)
   SCALES: (800,)
   MAX_SIZE: 1333
   IMS_PER_BATCH: 1
   BATCH_SIZE_PER_IM: 512
 TEST:
-  DATASETS: ('cflai_eval')
+  DATASETS: ('cflai_eval',)
   SCALE: 800
   MAX_SIZE: 1333
   NMS: 0.5
