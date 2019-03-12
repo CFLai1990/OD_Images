@@ -57,9 +57,10 @@ def mask2box(mask):
     right_bottom_r = np.max(rows)
     right_bottom_c = np.max(clos)
 
-    # [x1,y1,w,h] 对应COCO的bbox格式
-    print("type: ", type(left_top_r))
-    return [left_top_c, left_top_r, right_bottom_c-left_top_c, right_bottom_r-left_top_r]
+    # [x, y, w, h] 对应COCO的bbox格式
+    bbox = np.array([left_top_c, left_top_r, right_bottom_c-left_top_c, right_bottom_r-left_top_r])
+    bbox = bbox.tolist()
+    return bbox
 # ------------ CFLai modified ended ------------
 
 def main():
