@@ -58,6 +58,7 @@ def mask2box(mask):
     right_bottom_c = np.max(clos)
 
     # [x1,y1,w,h] 对应COCO的bbox格式
+    print("type: ", type(left_top_r))
     return [left_top_c, left_top_r, right_bottom_c-left_top_c, right_bottom_r-left_top_r]
 # ------------ CFLai modified ended ------------
 
@@ -187,8 +188,6 @@ def main():
                 image_id=image_id,
                 category_id=cls_id,
             ))
-        print("data: ", data)
-        print("data type: ", type(data))
 
     with open(out_ann_file, 'w') as _file:
         json.dump(data, _file)
