@@ -1,0 +1,26 @@
+MODEL:
+  TYPE: rpn
+  CONV_BODY: ResNet.add_ResNet50_conv4_body
+  NUM_CLASSES: 2
+  RPN_ONLY: True
+NUM_GPUS: 8
+SOLVER:
+  WEIGHT_DECAY: 0.0001
+  LR_POLICY: steps_with_decay
+  BASE_LR: 0.02
+  GAMMA: 0.1
+  MAX_ITER: 90000
+  STEPS: [0, 60000, 80000]
+RPN:
+  SIZES: (32, 64, 128, 256, 512)
+TRAIN:
+  WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/MSRA/R-50.pkl
+  DATASETS: ('cflai_train',)
+  SCALES: (800,)
+  MAX_SIZE: 1333
+TEST:
+  DATASETS: ('cflai_eval','cflai_train')
+  SCALE: 800
+  MAX_SIZE: 1333
+USE_NCCL: False
+OUTPUT_DIR: .
