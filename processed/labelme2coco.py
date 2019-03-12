@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""The module for transforming labelme data to COCO data"""
 
 import argparse
 import collections
@@ -20,8 +21,48 @@ except ImportError:
     print('Please install pycocotools:\n\n    pip install pycocotools\n')
     sys.exit(1)
 
+# ------------ CFLai modified started ------------
+# def get_bbox(img_shape, points):
+#     '''
+#     Get the bounding box of a polygon
+#     '''
+#     mask = polygons_to_mask([img_shape.height, img_shape.width], points)
+#     return mask2box(mask)
+
+# def polygons_to_mask(img_shape, polygons):
+#     '''
+#     Get the mask of a polygon
+#     '''
+#     mask = np.zeros(img_shape, dtype=np.uint8)
+#     mask = PIL.Image.fromarray(mask)
+#     xy = list(map(tuple, polygons))
+#     PIL.ImageDraw.Draw(mask).polygon(xy=xy, outline=1, fill=1)
+#     mask = np.array(mask, dtype=bool)
+#     return mask
+
+def mask2box(mask):
+    '''从mask反算出其边框
+    mask：[h,w]  0、1组成的图片
+    1对应对象，只需计算1对应的行列号（左上角行列号，右下角行列号，就可以算出其边框）
+    '''
+    # np.where(mask==1)
+    index = np.argwhere(mask == 1)
+    rows = index[:, 0]
+    clos = index[:, 1]
+    # 解析左上角行列号
+    left_top_r = np.min(rows)  # y
+    left_top_c = np.min(clos)  # x
+
+    # 解析右下角行列号
+    right_bottom_r = np.max(rows)
+    right_bottom_c = np.max(clos)
+
+    # [x1,y1,w,h] 对应COCO的bbox格式
+    return [left_top_c, left_top_r, right_bottom_c-left_top_c, right_bottom_r-left_top_r]
+# ------------ CFLai modified ended ------------
 
 def main():
+    """The main function"""
     parser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -85,8 +126,8 @@ def main():
     label_files = glob.glob(osp.join(args.input_dir, '*.json'))
     for image_id, label_file in enumerate(label_files):
         print('Generating dataset from:', label_file)
-        with open(label_file) as f:
-            label_data = json.load(f)
+        with open(label_file) as _file:
+            label_data = json.load(_file)
 
         base = osp.splitext(osp.basename(label_file))[0]
         out_img_file = osp.join(
@@ -132,6 +173,7 @@ def main():
                 continue
             cls_id = class_name_to_id[cls_name]
 
+            bbox = mask2box(mask)
             mask = np.asfortranarray(mask.astype(np.uint8))
             mask = pycocotools.mask.encode(mask)
             area = float(pycocotools.mask.area(mask))
@@ -141,12 +183,13 @@ def main():
                 segmentation=segmentations[label],
                 area=area,
                 iscrowd=None,
+                bbox=bbox,
                 image_id=image_id,
                 category_id=cls_id,
             ))
 
-    with open(out_ann_file, 'w') as f:
-        json.dump(data, f)
+    with open(out_ann_file, 'w') as _file:
+        json.dump(data, _file)
 
 
 if __name__ == '__main__':
