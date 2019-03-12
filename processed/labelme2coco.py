@@ -127,7 +127,7 @@ def main():
             segmentations[label].append(points)
 
         for label, mask in masks.items():
-            cls_name = label.split('_')[0]
+            cls_name = label.split('-')[0]
             if cls_name not in class_name_to_id:
                 continue
             cls_id = class_name_to_id[cls_name]
