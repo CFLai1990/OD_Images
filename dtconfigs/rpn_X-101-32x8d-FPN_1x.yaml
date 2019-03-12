@@ -25,7 +25,7 @@ RESNETS:
   WIDTH_PER_GROUP: 8
 TRAIN:
   WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/20171220/X-101-32x8d.pkl
-  DATASETS: ('cflai_train',)
+  DATASETS: ('cflai_train')
   SCALES: (800,)
   MAX_SIZE: 1333
 TEST:

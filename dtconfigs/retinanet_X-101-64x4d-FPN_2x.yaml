@@ -32,12 +32,12 @@ RETINANET:
   LOSS_ALPHA: 0.25
 TRAIN:
   WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/FBResNeXt/X-101-64x4d.pkl
-  DATASETS: ('cflai_train',)
+  DATASETS: ('cflai_train')
   SCALES: (800,)
   MAX_SIZE: 1333
   RPN_STRADDLE_THRESH: -1  # default 0
 TEST:
-  DATASETS: ('cflai_eval',)
+  DATASETS: ('cflai_eval')
   SCALE: 800
   MAX_SIZE: 1333
   NMS: 0.5

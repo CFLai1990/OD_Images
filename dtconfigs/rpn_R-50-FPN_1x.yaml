@@ -20,7 +20,7 @@ FPN:
   RPN_ASPECT_RATIOS: (0.5, 1, 2)
 TRAIN:
   WEIGHTS: https://dl.fbaipublicfiles.com/detectron/ImageNetPretrained/MSRA/R-50.pkl
-  DATASETS: ('cflai_train',)
+  DATASETS: ('cflai_train')
   SCALES: (800,)
   MAX_SIZE: 1333
 TEST:
