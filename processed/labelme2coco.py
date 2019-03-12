@@ -174,6 +174,7 @@ def main():
             cls_id = class_name_to_id[cls_name]
 
             bbox = mask2box(mask)
+            print('bbox: ', bbox)
             mask = np.asfortranarray(mask.astype(np.uint8))
             mask = pycocotools.mask.encode(mask)
             area = float(pycocotools.mask.area(mask))
