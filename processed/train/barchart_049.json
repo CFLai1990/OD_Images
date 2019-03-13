@@ -305,6 +305,22 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          0,
+          391
+        ],
+        [
+          294,
+          414
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

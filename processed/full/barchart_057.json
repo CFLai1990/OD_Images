@@ -145,6 +145,86 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          3,
+          38
+        ],
+        [
+          42,
+          213
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          39,
+          206
+        ],
+        [
+          399,
+          227
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          104,
+          242
+        ],
+        [
+          184,
+          253
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          196,
+          242
+        ],
+        [
+          260,
+          252
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          271,
+          242
+        ],
+        [
+          340,
+          252
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

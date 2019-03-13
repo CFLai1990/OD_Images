@@ -625,6 +625,54 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          27,
+          81
+        ],
+        [
+          189,
+          305
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          28,
+          320
+        ],
+        [
+          190,
+          535
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          28,
+          557
+        ],
+        [
+          190,
+          769
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

@@ -81,6 +81,38 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          10,
+          9
+        ],
+        [
+          62,
+          361
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          51,
+          350
+        ],
+        [
+          760,
+          407
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

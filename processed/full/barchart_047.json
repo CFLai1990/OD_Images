@@ -33,6 +33,38 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          5,
+          7
+        ],
+        [
+          64,
+          329
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          61,
+          322
+        ],
+        [
+          613,
+          358
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

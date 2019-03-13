@@ -401,6 +401,118 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          47,
+          42
+        ],
+        [
+          139,
+          328
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          135,
+          319
+        ],
+        [
+          567,
+          365
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          584,
+          158
+        ],
+        [
+          654,
+          170
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          583,
+          178
+        ],
+        [
+          632,
+          190
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          583,
+          200
+        ],
+        [
+          633,
+          212
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_4",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          584,
+          222
+        ],
+        [
+          639,
+          232
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_5",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          584,
+          243
+        ],
+        [
+          670,
+          255
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

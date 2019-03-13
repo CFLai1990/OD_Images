@@ -97,6 +97,38 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          48,
+          24
+        ],
+        [
+          80,
+          381
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          72,
+          373
+        ],
+        [
+          510,
+          392
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

@@ -161,6 +161,70 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          2,
+          6
+        ],
+        [
+          30,
+          520
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          324,
+          13
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          321,
+          7
+        ],
+        [
+          345,
+          521
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          31,
+          526
+        ],
+        [
+          145,
+          538
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

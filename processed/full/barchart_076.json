@@ -289,6 +289,38 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          52,
+          137
+        ],
+        [
+          89,
+          392
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          82,
+          379
+        ],
+        [
+          1207,
+          409
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

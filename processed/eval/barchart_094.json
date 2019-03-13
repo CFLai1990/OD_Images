@@ -305,6 +305,38 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          1,
+          51
+        ],
+        [
+          40,
+          479
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          728,
+          338
+        ],
+        [
+          786,
+          355
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [

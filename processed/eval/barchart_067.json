@@ -481,6 +481,134 @@
         ]
       ],
       "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          18,
+          131
+        ],
+        [
+          93,
+          548
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "axis_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          78,
+          540
+        ],
+        [
+          948,
+          637
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_1",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          33,
+          90
+        ],
+        [
+          89,
+          108
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_2",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          183,
+          89
+        ],
+        [
+          274,
+          107
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_3",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          333,
+          90
+        ],
+        [
+          390,
+          107
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_4",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          483,
+          89
+        ],
+        [
+          596,
+          109
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_5",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          634,
+          89
+        ],
+        [
+          702,
+          107
+        ]
+      ],
+      "shape_type": "rectangle"
+    },
+    {
+      "label": "legend_6",
+      "line_color": null,
+      "fill_color": null,
+      "points": [
+        [
+          783,
+          88
+        ],
+        [
+          839,
+          107
+        ]
+      ],
+      "shape_type": "rectangle"
     }
   ],
   "lineColor": [
