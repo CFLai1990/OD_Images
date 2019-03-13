@@ -160,26 +160,25 @@ def main():
             mask = labelme.utils.shape_to_mask(
                 img.shape[:2], points, shape_type
             )
-
             if label in masks:
                 masks[label] = masks[label] | mask
             else:
                 masks[label] = mask
-
+            if shape_type == "rectangle":
+                start_point = points[0]
+                end_point = points[1]
+                points.insert(1, [start_point[0], end_point[1]])
+                points.append([end_point[0], start_point[1]])
             points = np.asarray(points).flatten().tolist()
-            segmentations[label].append(points)
-
         for label, mask in masks.items():
             cls_name = label.split('-')[0]
             if cls_name not in class_name_to_id:
                 continue
             cls_id = class_name_to_id[cls_name]
-
             bbox = mask2box(mask)
             mask = np.asfortranarray(mask.astype(np.uint8))
             mask = pycocotools.mask.encode(mask)
             area = float(pycocotools.mask.area(mask))
-
             data['annotations'].append(dict(
                 id=len(data['annotations']),
                 segmentation=segmentations[label],
