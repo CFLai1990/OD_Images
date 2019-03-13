@@ -170,6 +170,7 @@ def main():
                 points.insert(1, [start_point[0], end_point[1]])
                 points.append([end_point[0], start_point[1]])
             points = np.asarray(points).flatten().tolist()
+            segmentations[label].append(points)
         for label, mask in masks.items():
             cls_name = label.split('-')[0]
             if cls_name not in class_name_to_id:
