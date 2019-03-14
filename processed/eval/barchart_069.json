@@ -131,7 +131,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "axis_1",
+      "label": "axis-1",
       "line_color": null,
       "fill_color": null,
       "points": [
@@ -147,7 +147,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "axis_2",
+      "label": "axis-2",
       "line_color": null,
       "fill_color": null,
       "points": [
@@ -163,7 +163,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "legend_1",
+      "label": "legend-1",
       "line_color": null,
       "fill_color": null,
       "points": [
@@ -179,7 +179,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "legend_2",
+      "label": "legend-2",
       "line_color": null,
       "fill_color": null,
       "points": [

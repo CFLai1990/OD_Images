@@ -627,7 +627,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "axis_1",
+      "label": "axis-1",
       "line_color": null,
       "fill_color": null,
       "points": [
@@ -643,7 +643,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "axis_2",
+      "label": "axis-2",
       "line_color": null,
       "fill_color": null,
       "points": [
@@ -659,7 +659,7 @@
       "shape_type": "rectangle"
     },
     {
-      "label": "axis_3",
+      "label": "axis-3",
       "line_color": null,
       "fill_color": null,
       "points": [
