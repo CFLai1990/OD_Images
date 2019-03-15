@@ -139,9 +139,7 @@ def main():
         img_file = osp.join(
             osp.dirname(label_file), label_data['imagePath']
         )
-        img_data = PIL.Image.open(img_file)
-        img_data = img_data.convert('RGB')
-        img = np.asarray(img_data)
+        img = np.asarray(PIL.Image.open(img_file))
         PIL.Image.fromarray(img).save(out_img_file)
         data['images'].append(dict(
             license=0,
