@@ -1,2 +1,14 @@
-20190313：121 张 barchart，只有 rectangle 的标注数据
-20190314：121 张 barchart，rectangle + axis + legend
+20190313：
+  - data: 121 张 barchart，只有 rectangle 的标注数据
+  - label: rectangle
+20190314：
+  - data: 121 张 barchart，rectangle + axis + legend
+  - label: rectangle + axis + legend
+20190315：
+  -data:
+    - 207 张 barchart
+    - 去掉了许多不好的样本图片
+    - 加入了 demo_bar 以及模板生成的直方图
+    - 新增少许有轴名称与无轴名称的对比图
+    - 总类别：rectangle + axis + legend + 少量的 pie
+  - label: rectangle + axis + legend

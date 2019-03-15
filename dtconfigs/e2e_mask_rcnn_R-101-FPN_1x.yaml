@@ -1,16 +1,19 @@
 MODEL:
   TYPE: generalized_rcnn
   CONV_BODY: FPN.add_fpn_ResNet101_conv5_body
-  NUM_CLASSES: 2
+  # change - NUM_CLASSES
+  NUM_CLASSES: 5
   FASTER_RCNN: True
   MASK_ON: True
 NUM_GPUS: 8
 SOLVER:
   WEIGHT_DECAY: 0.0001
   LR_POLICY: steps_with_decay
+  # change - BASE_LR
   BASE_LR: 0.02
   GAMMA: 0.1
-  MAX_ITER: 90000
+  # change - MAX_ITER, STEPS
+  MAX_ITER: 10000
   STEPS: [0, 60000, 80000]
 FPN:
   FPN_ON: True
