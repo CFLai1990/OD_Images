@@ -1,0 +1,11 @@
+{
+    "Records": [
+        {
+            "keywords": "piechart",
+            "limit": 300,
+            "print_urls": true,
+            "chromedriver": "d:\\Work\\Codes\\Annotation_Project\\OD_Images\\chromedriver.exe",
+            "format": "jpg"
+        }
+    ]
+}
