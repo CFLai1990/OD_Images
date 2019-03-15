@@ -10,7 +10,7 @@ SOLVER:
   WEIGHT_DECAY: 0.0001
   LR_POLICY: steps_with_decay
   # change - BASE_LR
-  BASE_LR: 0.02
+  BASE_LR: 0.01
   GAMMA: 0.1
   # change - MAX_ITER, STEPS
   MAX_ITER: 90000
