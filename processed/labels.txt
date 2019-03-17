@@ -3,3 +3,4 @@ _background_
 rectangle
 axis
 legend
+pie
