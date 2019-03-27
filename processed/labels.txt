@@ -4,3 +4,4 @@ rectangle
 axis
 legend
 pie
+point
